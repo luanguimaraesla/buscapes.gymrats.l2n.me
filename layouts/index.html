@@ -1,0 +1,68 @@
+{{ define "main" }}
+  {{ $highlights := hugo.Data.highlights }}
+
+  <section class="hero">
+    <div class="season-badge">Etapa {{ .Site.Params.season }} {{ .Site.Params.year }}</div>
+    <h1>TEMPORADA ENCERRADA</h1>
+    <p class="subtitle">Confira os resultados do desafio {{ .Site.Params.seasonEmoji }}</p>
+    <div class="stat-bar stagger">
+      <div class="stat-card">
+        <span class="number">{{ $highlights.total_checkins }}</span>
+        <span class="label">check-ins</span>
+      </div>
+      <div class="stat-card">
+        <span class="number">{{ $highlights.total_days }}</span>
+        <span class="label">dias de desafio</span>
+      </div>
+      <div class="stat-card">
+        <span class="number">{{ $highlights.total_competitors }}</span>
+        <span class="label">competidores</span>
+      </div>
+      <div class="stat-card">
+        <span class="number">{{ math.Round $highlights.total_hours }}h</span>
+        <span class="label">de treino</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner animate-in">
+    <span class="cta-emoji">🍂</span>
+    <div class="cta-text">
+      <strong>Etapa Outono j&aacute; come&ccedil;ou!</strong>
+      <span>Qualquer pessoa pode participar, mesmo quem n&atilde;o entrou no Ver&atilde;o.</span>
+    </div>
+    <a href="https://share.gymrats.app/join?code=ZCAEGYLI" class="cta-button" target="_blank" rel="noopener">Entrar no desafio</a>
+  </section>
+
+  <h2 class="section-title">P&oacute;dio</h2>
+  <div class="animate-in">
+    {{ partial "podium.html" . }}
+  </div>
+
+  <h2 class="section-title">Ranking Completo</h2>
+  <div class="animate-in">
+    {{ partial "ranking-table.html" . }}
+  </div>
+
+  <h2 class="section-title">Corrida ao Longo do Tempo</h2>
+  <p class="section-desc">Dias acumulados por competidor ao longo da esta&ccedil;&atilde;o (top 10).</p>
+  <div class="animate-in">
+    {{ partial "chart-race.html" . }}
+  </div>
+
+  <h2 class="section-title">Destaques da Esta&ccedil;&atilde;o</h2>
+  <div class="cards-grid stagger">
+    {{ range hugo.Data.awards }}
+    <article>
+      <span class="card-emoji">{{ .emoji }}</span>
+      <span class="card-value">{{ .title }}</span>
+      <span class="card-winner">{{ .winner }}</span>
+      <span class="card-label">{{ .description }}</span>
+    </article>
+    {{ end }}
+  </div>
+{{ end }}
+
+{{ define "head" }}
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+{{ end }}

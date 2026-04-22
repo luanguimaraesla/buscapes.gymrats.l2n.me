@@ -1,0 +1,190 @@
+{
+  "seasons": [
+    "Verão",
+    "Outono",
+    "Inverno",
+    "Primavera"
+  ],
+  "ranking": [
+    {
+      "position": 1,
+      "name": "Nedma Guimarães",
+      "short_name": "Nedma",
+      "seasons": {
+        "Verão": 10000,
+        "Outono": null,
+        "Inverno": null,
+        "Primavera": null
+      },
+      "total": 10000
+    },
+    {
+      "position": 2,
+      "name": "Luan Guimarães",
+      "short_name": "Luan",
+      "seasons": {
+        "Verão": 8500,
+        "Outono": null,
+        "Inverno": null,
+        "Primavera": null
+      },
+      "total": 8500
+    },
+    {
+      "position": 3,
+      "name": "Guilherme Guimarães Lacerda",
+      "short_name": "Guilherme",
+      "seasons": {
+        "Verão": 7500,
+        "Outono": null,
+        "Inverno": null,
+        "Primavera": null
+      },
+      "total": 7500
+    },
+    {
+      "position": 4,
+      "name": "Ana Beatriz",
+      "short_name": "Ana B.",
+      "seasons": {
+        "Verão": 6500,
+        "Outono": null,
+        "Inverno": null,
+        "Primavera": null
+      },
+      "total": 6500
+    },
+    {
+      "position": 5,
+      "name": "Nelia",
+      "short_name": "Nelia",
+      "seasons": {
+        "Verão": 5500,
+        "Outono": null,
+        "Inverno": null,
+        "Primavera": null
+      },
+      "total": 5500
+    },
+    {
+      "position": 6,
+      "name": "Beatriz Franco",
+      "short_name": "Beatriz",
+      "seasons": {
+        "Verão": 5000,
+        "Outono": null,
+        "Inverno": null,
+        "Primavera": null
+      },
+      "total": 5000
+    },
+    {
+      "position": 7,
+      "name": "Carol Luengo",
+      "short_name": "Carol",
+      "seasons": {
+        "Verão": 4500,
+        "Outono": null,
+        "Inverno": null,
+        "Primavera": null
+      },
+      "total": 4500
+    },
+    {
+      "position": 8,
+      "name": "Pedro",
+      "short_name": "Pedro",
+      "seasons": {
+        "Verão": 4000,
+        "Outono": null,
+        "Inverno": null,
+        "Primavera": null
+      },
+      "total": 4000
+    },
+    {
+      "position": 9,
+      "name": "Talita Miotto",
+      "short_name": "Talita",
+      "seasons": {
+        "Verão": 3500,
+        "Outono": null,
+        "Inverno": null,
+        "Primavera": null
+      },
+      "total": 3500
+    },
+    {
+      "position": 10,
+      "name": "Aryane Vilhardo Guimarães",
+      "short_name": "Aryane",
+      "seasons": {
+        "Verão": 3000,
+        "Outono": null,
+        "Inverno": null,
+        "Primavera": null
+      },
+      "total": 3000
+    },
+    {
+      "position": 11,
+      "name": "Vanderlene Ferreira Sanches",
+      "short_name": "Vanderlene",
+      "seasons": {
+        "Verão": 2500,
+        "Outono": null,
+        "Inverno": null,
+        "Primavera": null
+      },
+      "total": 2500
+    },
+    {
+      "position": 11,
+      "name": "Isadora",
+      "short_name": "Isadora",
+      "seasons": {
+        "Verão": 2500,
+        "Outono": null,
+        "Inverno": null,
+        "Primavera": null
+      },
+      "total": 2500
+    },
+    {
+      "position": 11,
+      "name": "Anyne Vilhardo",
+      "short_name": "Anyne",
+      "seasons": {
+        "Verão": 2500,
+        "Outono": null,
+        "Inverno": null,
+        "Primavera": null
+      },
+      "total": 2500
+    },
+    {
+      "position": 14,
+      "name": "Ana Letícia",
+      "short_name": "Ana L.",
+      "seasons": {
+        "Verão": 0,
+        "Outono": null,
+        "Inverno": null,
+        "Primavera": null
+      },
+      "total": 0
+    },
+    {
+      "position": 14,
+      "name": "José Vitor Guimarães",
+      "short_name": "José",
+      "seasons": {
+        "Verão": 0,
+        "Outono": null,
+        "Inverno": null,
+        "Primavera": null
+      },
+      "total": 0
+    }
+  ]
+}

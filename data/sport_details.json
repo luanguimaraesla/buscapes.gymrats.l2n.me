@@ -1,0 +1,398 @@
+[
+  {
+    "key": "running",
+    "emoji": "🏃",
+    "name": "Corrida",
+    "athletes": [
+      {
+        "name": "Nelia",
+        "count": 36,
+        "dist_km": 245.0,
+        "calories": 10148,
+        "hours": 21.8
+      },
+      {
+        "name": "Carol",
+        "count": 24,
+        "dist_km": 124.4,
+        "calories": 6765,
+        "hours": 9.3
+      },
+      {
+        "name": "Ana B.",
+        "count": 23,
+        "dist_km": 156.5,
+        "calories": 6483,
+        "hours": 13.9
+      },
+      {
+        "name": "Beatriz",
+        "count": 21,
+        "dist_km": 123.6,
+        "calories": 5276,
+        "hours": 11.5
+      },
+      {
+        "name": "Guilherme",
+        "count": 19,
+        "dist_km": 129.3,
+        "calories": 5356,
+        "hours": 11.5
+      },
+      {
+        "name": "Luan",
+        "count": 16,
+        "dist_km": 131.3,
+        "calories": 5168,
+        "hours": 10.7
+      },
+      {
+        "name": "Talita",
+        "count": 13,
+        "dist_km": 81.0,
+        "calories": 3650,
+        "hours": 12.3
+      },
+      {
+        "name": "Nedma",
+        "count": 12,
+        "dist_km": 125.0,
+        "calories": 3383,
+        "hours": 7.5
+      }
+    ],
+    "metrics": [
+      {
+        "key": "dist_km",
+        "label": "Distância",
+        "unit": "km",
+        "total": 1177.3,
+        "leader_name": "Nelia",
+        "leader_value": 245.0
+      },
+      {
+        "key": "hours",
+        "label": "Horas",
+        "unit": "h",
+        "total": 104.6,
+        "leader_name": "Nelia",
+        "leader_value": 21.8
+      },
+      {
+        "key": "calories",
+        "label": "Calorias",
+        "unit": "kcal",
+        "total": 48766,
+        "leader_name": "Nelia",
+        "leader_value": 10148
+      },
+      {
+        "key": "count",
+        "label": "Sessões",
+        "unit": "",
+        "total": 173,
+        "leader_name": "Nelia",
+        "leader_value": 36
+      }
+    ],
+    "total_athletes": 10
+  },
+  {
+    "key": "strength_training",
+    "emoji": "🏋️",
+    "name": "Musculação",
+    "athletes": [
+      {
+        "name": "Ana B.",
+        "count": 52,
+        "dist_km": 0.0,
+        "calories": 20271,
+        "hours": 57.5
+      },
+      {
+        "name": "Pedro",
+        "count": 51,
+        "dist_km": 0.0,
+        "calories": 21170,
+        "hours": 54.9
+      },
+      {
+        "name": "Nelia",
+        "count": 25,
+        "dist_km": 0.0,
+        "calories": 9746,
+        "hours": 27.6
+      },
+      {
+        "name": "Aryane",
+        "count": 18,
+        "dist_km": 0.0,
+        "calories": 7017,
+        "hours": 22.0
+      },
+      {
+        "name": "Isadora",
+        "count": 17,
+        "dist_km": 0.0,
+        "calories": 6627,
+        "hours": 18.8
+      },
+      {
+        "name": "Beatriz",
+        "count": 11,
+        "dist_km": 0.0,
+        "calories": 3454,
+        "hours": 12.9
+      },
+      {
+        "name": "Guilherme",
+        "count": 10,
+        "dist_km": 0.0,
+        "calories": 3898,
+        "hours": 11.1
+      },
+      {
+        "name": "Anyne",
+        "count": 10,
+        "dist_km": 0.0,
+        "calories": 3898,
+        "hours": 11.5
+      }
+    ],
+    "metrics": [
+      {
+        "key": "hours",
+        "label": "Horas",
+        "unit": "h",
+        "total": 236.6,
+        "leader_name": "Ana B.",
+        "leader_value": 57.5
+      },
+      {
+        "key": "calories",
+        "label": "Calorias",
+        "unit": "kcal",
+        "total": 83423,
+        "leader_name": "Pedro",
+        "leader_value": 21170
+      },
+      {
+        "key": "count",
+        "label": "Sessões",
+        "unit": "",
+        "total": 214,
+        "leader_name": "Ana B.",
+        "leader_value": 52
+      }
+    ],
+    "total_athletes": 12
+  },
+  {
+    "key": "surfing",
+    "emoji": "🏄",
+    "name": "Surfe",
+    "athletes": [
+      {
+        "name": "Luan",
+        "count": 34,
+        "dist_km": 0.0,
+        "calories": 17493,
+        "hours": 52.5
+      },
+      {
+        "name": "Guilherme",
+        "count": 34,
+        "dist_km": 0.0,
+        "calories": 16857,
+        "hours": 48.7
+      },
+      {
+        "name": "Beatriz",
+        "count": 23,
+        "dist_km": 47.2,
+        "calories": 10767,
+        "hours": 29.2
+      }
+    ],
+    "metrics": [
+      {
+        "key": "hours",
+        "label": "Horas",
+        "unit": "h",
+        "total": 130.4,
+        "leader_name": "Luan",
+        "leader_value": 52.5
+      },
+      {
+        "key": "count",
+        "label": "Sessões",
+        "unit": "",
+        "total": 91,
+        "leader_name": "Luan",
+        "leader_value": 34
+      }
+    ],
+    "total_athletes": 3
+  },
+  {
+    "key": "swimming",
+    "emoji": "🏊",
+    "name": "Natação",
+    "athletes": [
+      {
+        "name": "Talita",
+        "count": 7,
+        "dist_km": 10.7,
+        "calories": 2281,
+        "hours": 8.1
+      },
+      {
+        "name": "Isadora",
+        "count": 3,
+        "dist_km": 3.8,
+        "calories": 809,
+        "hours": 2.6
+      },
+      {
+        "name": "Luan",
+        "count": 2,
+        "dist_km": 2.8,
+        "calories": 571,
+        "hours": 1.1
+      },
+      {
+        "name": "Pedro",
+        "count": 2,
+        "dist_km": 0.5,
+        "calories": 115,
+        "hours": 0.2
+      },
+      {
+        "name": "Ana B.",
+        "count": 2,
+        "dist_km": 2.5,
+        "calories": 539,
+        "hours": 1.7
+      }
+    ],
+    "metrics": [
+      {
+        "key": "dist_km",
+        "label": "Distância",
+        "unit": "km",
+        "total": 20.3,
+        "leader_name": "Talita",
+        "leader_value": 10.7
+      },
+      {
+        "key": "hours",
+        "label": "Horas",
+        "unit": "h",
+        "total": 13.7,
+        "leader_name": "Talita",
+        "leader_value": 8.1
+      },
+      {
+        "key": "calories",
+        "label": "Calorias",
+        "unit": "kcal",
+        "total": 4315,
+        "leader_name": "Talita",
+        "leader_value": 2281
+      },
+      {
+        "key": "count",
+        "label": "Sessões",
+        "unit": "",
+        "total": 16,
+        "leader_name": "Talita",
+        "leader_value": 7
+      }
+    ],
+    "total_athletes": 5
+  },
+  {
+    "key": "cycling",
+    "emoji": "🚴",
+    "name": "Ciclismo",
+    "athletes": [
+      {
+        "name": "Nelia",
+        "count": 8,
+        "dist_km": 262.2,
+        "calories": 3044,
+        "hours": 9.2
+      },
+      {
+        "name": "Talita",
+        "count": 6,
+        "dist_km": 196.7,
+        "calories": 1794,
+        "hours": 5.9
+      },
+      {
+        "name": "Luan",
+        "count": 3,
+        "dist_km": 103.8,
+        "calories": 1631,
+        "hours": 4.8
+      },
+      {
+        "name": "Beatriz",
+        "count": 2,
+        "dist_km": 60.1,
+        "calories": 761,
+        "hours": 2.7
+      },
+      {
+        "name": "Aryane",
+        "count": 2,
+        "dist_km": 65.6,
+        "calories": 761,
+        "hours": 2.3
+      },
+      {
+        "name": "Isadora",
+        "count": 1,
+        "dist_km": 32.8,
+        "calories": 381,
+        "hours": 0.4
+      }
+    ],
+    "metrics": [
+      {
+        "key": "dist_km",
+        "label": "Distância",
+        "unit": "km",
+        "total": 721.2,
+        "leader_name": "Nelia",
+        "leader_value": 262.2
+      },
+      {
+        "key": "hours",
+        "label": "Horas",
+        "unit": "h",
+        "total": 25.3,
+        "leader_name": "Nelia",
+        "leader_value": 9.2
+      },
+      {
+        "key": "calories",
+        "label": "Calorias",
+        "unit": "kcal",
+        "total": 8372,
+        "leader_name": "Nelia",
+        "leader_value": 3044
+      },
+      {
+        "key": "count",
+        "label": "Sessões",
+        "unit": "",
+        "total": 22,
+        "leader_name": "Nelia",
+        "leader_value": 8
+      }
+    ],
+    "total_athletes": 6
+  }
+]

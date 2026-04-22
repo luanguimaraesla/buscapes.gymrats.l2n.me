@@ -1,0 +1,60 @@
+{{ $ranking := hugo.Data.ranking }}
+{{ $highlights := hugo.Data.highlights }}
+{{ $first := index $ranking 0 }}
+{{ $isTied := $highlights.champions_tied }}
+
+{{ if $isTied }}
+  {{ $second := index $ranking 1 }}
+  {{ $third := index $ranking 2 }}
+  <div class="podium-tied">
+    <div class="podium-place first">
+      <span class="medal">👑</span>
+      <span class="name">{{ $first.short_name }}</span>
+      <span class="days">{{ $first.unique_days }} dias</span>
+      <span class="points">{{ $first.points | lang.FormatNumber 0 }} pts</span>
+      <div class="podium-pillar"><span class="rank">1</span></div>
+    </div>
+    <div class="podium-place first">
+      <span class="medal">👑</span>
+      <span class="name">{{ $second.short_name }}</span>
+      <span class="days">{{ $second.unique_days }} dias</span>
+      <span class="points">{{ $second.points | lang.FormatNumber 0 }} pts</span>
+      <div class="podium-pillar"><span class="rank">1</span></div>
+    </div>
+  </div>
+  <div class="podium-extra">
+    <div class="podium-place third" style="flex: 0 1 150px;">
+      <span class="medal">🥉</span>
+      <span class="name">{{ $third.short_name }}</span>
+      <span class="days">{{ $third.unique_days }} dias</span>
+      <span class="points">{{ $third.points | lang.FormatNumber 0 }} pts</span>
+      <div class="podium-pillar"><span class="rank">3</span></div>
+    </div>
+  </div>
+{{ else }}
+  {{ $second := index $ranking 1 }}
+  {{ $third := index $ranking 2 }}
+  <div class="podium">
+    <div class="podium-place second">
+      <span class="medal">🥈</span>
+      <span class="name">{{ $second.short_name }}</span>
+      <span class="days">{{ $second.unique_days }} dias</span>
+      <span class="points">{{ $second.points | lang.FormatNumber 0 }} pts</span>
+      <div class="podium-pillar"><span class="rank">2</span></div>
+    </div>
+    <div class="podium-place first">
+      <span class="medal">👑</span>
+      <span class="name">{{ $first.short_name }}</span>
+      <span class="days">{{ $first.unique_days }} dias</span>
+      <span class="points">{{ $first.points | lang.FormatNumber 0 }} pts</span>
+      <div class="podium-pillar"><span class="rank">1</span></div>
+    </div>
+    <div class="podium-place third">
+      <span class="medal">🥉</span>
+      <span class="name">{{ $third.short_name }}</span>
+      <span class="days">{{ $third.unique_days }} dias</span>
+      <span class="points">{{ $third.points | lang.FormatNumber 0 }} pts</span>
+      <div class="podium-pillar"><span class="rank">3</span></div>
+    </div>
+  </div>
+{{ end }}

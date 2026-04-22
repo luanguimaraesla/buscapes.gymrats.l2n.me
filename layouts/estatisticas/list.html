@@ -1,0 +1,35 @@
+{{ define "main" }}
+  <section class="hero" style="padding-bottom: 0;">
+    <div class="season-badge">Etapa {{ .Site.Params.season }} {{ .Site.Params.year }}</div>
+    <h1>ESTAT&Iacute;STICAS</h1>
+    <p class="subtitle">N&uacute;meros detalhados da temporada</p>
+  </section>
+
+  <h2 class="section-title">Evolu&ccedil;&atilde;o Mensal</h2>
+  <p class="section-desc">Dias de exerc&iacute;cio por competidor em cada m&ecirc;s (top 10).</p>
+  <div class="animate-in">
+    {{ partial "chart-monthly.html" . }}
+  </div>
+
+  <h2 class="section-title">Dia da Semana</h2>
+  <p class="section-desc">Qual dia da semana o pessoal mais treina?</p>
+  <div class="animate-in">
+    {{ partial "chart-weekday.html" . }}
+  </div>
+
+  <h2 class="section-title">Atividades Mais Populares</h2>
+  <div class="animate-in">
+    {{ partial "chart-activities.html" . }}
+  </div>
+
+  <h2 class="section-title">Destaques por Modalidade</h2>
+  {{ partial "chart-sport-spotlights.html" . }}
+
+  <h2 class="section-title">Detalhes por Esporte</h2>
+  <p class="section-desc">Estat&iacute;sticas detalhadas de cada modalidade.</p>
+  {{ partial "sport-details.html" . }}
+{{ end }}
+
+{{ define "head" }}
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+{{ end }}

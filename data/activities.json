@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Musculação",
+    "key": "strength_training",
+    "count": 214
+  },
+  {
+    "name": "Corrida",
+    "key": "running",
+    "count": 173
+  },
+  {
+    "name": "Surfe",
+    "key": "surfing",
+    "count": 91
+  },
+  {
+    "name": "Calistenia",
+    "key": "calisthenics",
+    "count": 76
+  },
+  {
+    "name": "Caminhada",
+    "key": "walking",
+    "count": 57
+  },
+  {
+    "name": "Funcional",
+    "key": "functional_training",
+    "count": 54
+  },
+  {
+    "name": "Ginástica",
+    "key": "gymnastics",
+    "count": 37
+  },
+  {
+    "name": "Esporte Recreativo",
+    "key": "rec_sport",
+    "count": 26
+  },
+  {
+    "name": "Ciclismo",
+    "key": "cycling",
+    "count": 22
+  },
+  {
+    "name": "Cardio",
+    "key": "cardio",
+    "count": 19
+  },
+  {
+    "name": "Natação",
+    "key": "swimming",
+    "count": 16
+  },
+  {
+    "name": "Vôlei",
+    "key": "volleyball",
+    "count": 13
+  },
+  {
+    "name": "Trilha",
+    "key": "hiking",
+    "count": 10
+  },
+  {
+    "name": "Esportes de Neve",
+    "key": "snow_sports",
+    "count": 9
+  }
+]

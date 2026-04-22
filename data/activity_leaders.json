@@ -1,0 +1,270 @@
+{
+  "Funcional": [
+    {
+      "name": "Nedma",
+      "count": 48
+    },
+    {
+      "name": "Beatriz",
+      "count": 4
+    },
+    {
+      "name": "Nelia",
+      "count": 1
+    },
+    {
+      "name": "Ana B.",
+      "count": 1
+    }
+  ],
+  "Calistenia": [
+    {
+      "name": "Luan",
+      "count": 39
+    },
+    {
+      "name": "Beatriz",
+      "count": 22
+    },
+    {
+      "name": "Guilherme",
+      "count": 14
+    },
+    {
+      "name": "Nelia",
+      "count": 1
+    }
+  ],
+  "Surfe": [
+    {
+      "name": "Luan",
+      "count": 34
+    },
+    {
+      "name": "Guilherme",
+      "count": 34
+    },
+    {
+      "name": "Beatriz",
+      "count": 23
+    }
+  ],
+  "Corrida": [
+    {
+      "name": "Nelia",
+      "count": 36
+    },
+    {
+      "name": "Carol",
+      "count": 24
+    },
+    {
+      "name": "Ana B.",
+      "count": 23
+    },
+    {
+      "name": "Beatriz",
+      "count": 21
+    },
+    {
+      "name": "Guilherme",
+      "count": 19
+    }
+  ],
+  "Musculação": [
+    {
+      "name": "Ana B.",
+      "count": 52
+    },
+    {
+      "name": "Pedro",
+      "count": 51
+    },
+    {
+      "name": "Nelia",
+      "count": 25
+    },
+    {
+      "name": "Aryane",
+      "count": 18
+    },
+    {
+      "name": "Isadora",
+      "count": 17
+    }
+  ],
+  "Ciclismo": [
+    {
+      "name": "Nelia",
+      "count": 8
+    },
+    {
+      "name": "Talita",
+      "count": 6
+    },
+    {
+      "name": "Luan",
+      "count": 3
+    },
+    {
+      "name": "Beatriz",
+      "count": 2
+    },
+    {
+      "name": "Aryane",
+      "count": 2
+    }
+  ],
+  "Trilha": [
+    {
+      "name": "Luan",
+      "count": 4
+    },
+    {
+      "name": "Beatriz",
+      "count": 3
+    },
+    {
+      "name": "Nelia",
+      "count": 1
+    },
+    {
+      "name": "Guilherme",
+      "count": 1
+    },
+    {
+      "name": "Nedma",
+      "count": 1
+    }
+  ],
+  "Cardio": [
+    {
+      "name": "Nedma",
+      "count": 9
+    },
+    {
+      "name": "Aryane",
+      "count": 5
+    },
+    {
+      "name": "Talita",
+      "count": 3
+    },
+    {
+      "name": "Nelia",
+      "count": 1
+    },
+    {
+      "name": "Carol",
+      "count": 1
+    }
+  ],
+  "Caminhada": [
+    {
+      "name": "Nedma",
+      "count": 22
+    },
+    {
+      "name": "Vanderlene",
+      "count": 19
+    },
+    {
+      "name": "Talita",
+      "count": 5
+    },
+    {
+      "name": "Carol",
+      "count": 4
+    },
+    {
+      "name": "Aryane",
+      "count": 3
+    }
+  ],
+  "Natação": [
+    {
+      "name": "Talita",
+      "count": 7
+    },
+    {
+      "name": "Isadora",
+      "count": 3
+    },
+    {
+      "name": "Luan",
+      "count": 2
+    },
+    {
+      "name": "Pedro",
+      "count": 2
+    },
+    {
+      "name": "Ana B.",
+      "count": 2
+    }
+  ],
+  "Esporte Recreativo": [
+    {
+      "name": "Pedro",
+      "count": 15
+    },
+    {
+      "name": "Guilherme",
+      "count": 6
+    },
+    {
+      "name": "José",
+      "count": 3
+    },
+    {
+      "name": "Luan",
+      "count": 1
+    },
+    {
+      "name": "Carol",
+      "count": 1
+    }
+  ],
+  "Esportes de Neve": [
+    {
+      "name": "Pedro",
+      "count": 9
+    }
+  ],
+  "Ginástica": [
+    {
+      "name": "Carol",
+      "count": 25
+    },
+    {
+      "name": "Vanderlene",
+      "count": 10
+    },
+    {
+      "name": "Talita",
+      "count": 1
+    },
+    {
+      "name": "Nedma",
+      "count": 1
+    }
+  ],
+  "Vôlei": [
+    {
+      "name": "Carol",
+      "count": 8
+    },
+    {
+      "name": "Guilherme",
+      "count": 3
+    },
+    {
+      "name": "Isadora",
+      "count": 1
+    },
+    {
+      "name": "José",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,481 @@
+[
+  {
+    "position": 1,
+    "name": "Nedma Guimarães",
+    "short_name": "Nedma",
+    "account_id": 1869528,
+    "unique_days": 91,
+    "checkins": 95,
+    "points": 10000,
+    "streak": 27,
+    "total_hours": 101.6,
+    "monthly": {
+      "Jan": 27,
+      "Fev": 26,
+      "Mar": 24,
+      "Abr": 14
+    },
+    "top_activities": [
+      {
+        "name": "Funcional",
+        "count": 48
+      },
+      {
+        "name": "Caminhada",
+        "count": 22
+      },
+      {
+        "name": "Corrida",
+        "count": 12
+      }
+    ],
+    "activity_variety": 7,
+    "photos": 99
+  },
+  {
+    "position": 2,
+    "name": "Luan Guimarães",
+    "short_name": "Luan",
+    "account_id": 1937870,
+    "unique_days": 85,
+    "checkins": 99,
+    "points": 8500,
+    "streak": 16,
+    "total_hours": 143.2,
+    "monthly": {
+      "Jan": 24,
+      "Fev": 24,
+      "Mar": 28,
+      "Abr": 9
+    },
+    "top_activities": [
+      {
+        "name": "Calistenia",
+        "count": 39
+      },
+      {
+        "name": "Surfe",
+        "count": 34
+      },
+      {
+        "name": "Corrida",
+        "count": 16
+      }
+    ],
+    "activity_variety": 7,
+    "photos": 12
+  },
+  {
+    "position": 3,
+    "name": "Guilherme Guimarães Lacerda",
+    "short_name": "Guilherme",
+    "account_id": 2029960,
+    "unique_days": 81,
+    "checkins": 87,
+    "points": 7500,
+    "streak": 16,
+    "total_hours": 97.6,
+    "monthly": {
+      "Jan": 25,
+      "Fev": 24,
+      "Mar": 27,
+      "Abr": 5
+    },
+    "top_activities": [
+      {
+        "name": "Surfe",
+        "count": 34
+      },
+      {
+        "name": "Corrida",
+        "count": 19
+      },
+      {
+        "name": "Calistenia",
+        "count": 14
+      }
+    ],
+    "activity_variety": 7,
+    "photos": 96
+  },
+  {
+    "position": 4,
+    "name": "Ana Beatriz",
+    "short_name": "Ana B.",
+    "account_id": 438588,
+    "unique_days": 79,
+    "checkins": 79,
+    "points": 6500,
+    "streak": 14,
+    "total_hours": 88.6,
+    "monthly": {
+      "Jan": 24,
+      "Fev": 23,
+      "Mar": 23,
+      "Abr": 9
+    },
+    "top_activities": [
+      {
+        "name": "Musculação",
+        "count": 52
+      },
+      {
+        "name": "Corrida",
+        "count": 23
+      },
+      {
+        "name": "Natação",
+        "count": 2
+      }
+    ],
+    "activity_variety": 5,
+    "photos": 85
+  },
+  {
+    "position": 5,
+    "name": "Nelia",
+    "short_name": "Nelia",
+    "account_id": 1878587,
+    "unique_days": 74,
+    "checkins": 75,
+    "points": 5500,
+    "streak": 36,
+    "total_hours": 84.1,
+    "monthly": {
+      "Jan": 27,
+      "Fev": 18,
+      "Mar": 19,
+      "Abr": 10
+    },
+    "top_activities": [
+      {
+        "name": "Corrida",
+        "count": 36
+      },
+      {
+        "name": "Musculação",
+        "count": 25
+      },
+      {
+        "name": "Ciclismo",
+        "count": 8
+      }
+    ],
+    "activity_variety": 8,
+    "photos": 75
+  },
+  {
+    "position": 6,
+    "name": "Beatriz Franco",
+    "short_name": "Beatriz",
+    "account_id": 205734,
+    "unique_days": 71,
+    "checkins": 86,
+    "points": 5000,
+    "streak": 18,
+    "total_hours": 102.8,
+    "monthly": {
+      "Jan": 23,
+      "Fev": 25,
+      "Mar": 11,
+      "Abr": 12
+    },
+    "top_activities": [
+      {
+        "name": "Surfe",
+        "count": 23
+      },
+      {
+        "name": "Calistenia",
+        "count": 22
+      },
+      {
+        "name": "Corrida",
+        "count": 21
+      }
+    ],
+    "activity_variety": 7,
+    "photos": 67
+  },
+  {
+    "position": 7,
+    "name": "Carol Luengo",
+    "short_name": "Carol",
+    "account_id": 6151927,
+    "unique_days": 62,
+    "checkins": 63,
+    "points": 4500,
+    "streak": 6,
+    "total_hours": 62.6,
+    "monthly": {
+      "Jan": 17,
+      "Fev": 15,
+      "Mar": 19,
+      "Abr": 11
+    },
+    "top_activities": [
+      {
+        "name": "Ginástica",
+        "count": 25
+      },
+      {
+        "name": "Corrida",
+        "count": 24
+      },
+      {
+        "name": "Vôlei",
+        "count": 8
+      }
+    ],
+    "activity_variety": 6,
+    "photos": 45
+  },
+  {
+    "position": 8,
+    "name": "Pedro",
+    "short_name": "Pedro",
+    "account_id": 1867362,
+    "unique_days": 48,
+    "checkins": 77,
+    "points": 4000,
+    "streak": 7,
+    "total_hours": 76.2,
+    "monthly": {
+      "Jan": 13,
+      "Fev": 11,
+      "Mar": 16,
+      "Abr": 8
+    },
+    "top_activities": [
+      {
+        "name": "Musculação",
+        "count": 51
+      },
+      {
+        "name": "Esporte Recreativo",
+        "count": 15
+      },
+      {
+        "name": "Esportes de Neve",
+        "count": 9
+      }
+    ],
+    "activity_variety": 4,
+    "photos": 2
+  },
+  {
+    "position": 9,
+    "name": "Talita Miotto",
+    "short_name": "Talita",
+    "account_id": 1867758,
+    "unique_days": 38,
+    "checkins": 42,
+    "points": 3500,
+    "streak": 5,
+    "total_hours": 39.1,
+    "monthly": {
+      "Jan": 12,
+      "Fev": 10,
+      "Mar": 13,
+      "Abr": 3
+    },
+    "top_activities": [
+      {
+        "name": "Corrida",
+        "count": 13
+      },
+      {
+        "name": "Natação",
+        "count": 7
+      },
+      {
+        "name": "Musculação",
+        "count": 7
+      }
+    ],
+    "activity_variety": 7,
+    "photos": 32
+  },
+  {
+    "position": 10,
+    "name": "Aryane Vilhardo Guimarães",
+    "short_name": "Aryane",
+    "account_id": 2265389,
+    "unique_days": 31,
+    "checkins": 31,
+    "points": 3000,
+    "streak": 4,
+    "total_hours": 36.1,
+    "monthly": {
+      "Jan": 6,
+      "Fev": 11,
+      "Mar": 6,
+      "Abr": 8
+    },
+    "top_activities": [
+      {
+        "name": "Musculação",
+        "count": 18
+      },
+      {
+        "name": "Cardio",
+        "count": 5
+      },
+      {
+        "name": "Caminhada",
+        "count": 3
+      }
+    ],
+    "activity_variety": 5,
+    "photos": 32
+  },
+  {
+    "position": 11,
+    "name": "Vanderlene Ferreira Sanches",
+    "short_name": "Vanderlene",
+    "account_id": 1867464,
+    "unique_days": 30,
+    "checkins": 41,
+    "points": 2500,
+    "streak": 3,
+    "total_hours": 37.6,
+    "monthly": {
+      "Jan": 15,
+      "Fev": 10,
+      "Mar": 5,
+      "Abr": 0
+    },
+    "top_activities": [
+      {
+        "name": "Caminhada",
+        "count": 19
+      },
+      {
+        "name": "Ginástica",
+        "count": 10
+      },
+      {
+        "name": "Musculação",
+        "count": 6
+      }
+    ],
+    "activity_variety": 4,
+    "photos": 38
+  },
+  {
+    "position": 12,
+    "name": "Isadora",
+    "short_name": "Isadora",
+    "account_id": 2251839,
+    "unique_days": 22,
+    "checkins": 22,
+    "points": 2500,
+    "streak": 5,
+    "total_hours": 24.0,
+    "monthly": {
+      "Jan": 8,
+      "Fev": 11,
+      "Mar": 3,
+      "Abr": 0
+    },
+    "top_activities": [
+      {
+        "name": "Musculação",
+        "count": 17
+      },
+      {
+        "name": "Natação",
+        "count": 3
+      },
+      {
+        "name": "Ciclismo",
+        "count": 1
+      }
+    ],
+    "activity_variety": 4,
+    "photos": 22
+  },
+  {
+    "position": 13,
+    "name": "Anyne Vilhardo",
+    "short_name": "Anyne",
+    "account_id": 6306463,
+    "unique_days": 10,
+    "checkins": 11,
+    "points": 2500,
+    "streak": 1,
+    "total_hours": 12.5,
+    "monthly": {
+      "Jan": 5,
+      "Fev": 2,
+      "Mar": 3,
+      "Abr": 0
+    },
+    "top_activities": [
+      {
+        "name": "Musculação",
+        "count": 10
+      },
+      {
+        "name": "Caminhada",
+        "count": 1
+      }
+    ],
+    "activity_variety": 2,
+    "photos": 11
+  },
+  {
+    "position": 14,
+    "name": "Ana Letícia",
+    "short_name": "Ana L.",
+    "account_id": 3055079,
+    "unique_days": 5,
+    "checkins": 5,
+    "points": 0,
+    "streak": 1,
+    "total_hours": 5.6,
+    "monthly": {
+      "Jan": 5,
+      "Fev": 0,
+      "Mar": 0,
+      "Abr": 0
+    },
+    "top_activities": [
+      {
+        "name": "Musculação",
+        "count": 5
+      }
+    ],
+    "activity_variety": 1,
+    "photos": 5
+  },
+  {
+    "position": 15,
+    "name": "José Vitor Guimarães",
+    "short_name": "José",
+    "account_id": 2236857,
+    "unique_days": 4,
+    "checkins": 4,
+    "points": 0,
+    "streak": 3,
+    "total_hours": 4.5,
+    "monthly": {
+      "Jan": 1,
+      "Fev": 3,
+      "Mar": 0,
+      "Abr": 0
+    },
+    "top_activities": [
+      {
+        "name": "Esporte Recreativo",
+        "count": 3
+      },
+      {
+        "name": "Vôlei",
+        "count": 1
+      }
+    ],
+    "activity_variety": 2,
+    "photos": 4
+  }
+]

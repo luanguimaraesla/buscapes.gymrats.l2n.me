@@ -1,0 +1,53 @@
+{{ $weekdays := hugo.Data.weekdays }}
+<div class="chart-container">
+  <canvas id="weekdayChart"></canvas>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var data = {{ $weekdays | jsonify | safeJS }};
+  var labels = data.map(function(d) { return d.day; });
+  var counts = data.map(function(d) { return d.count; });
+  var max = Math.max.apply(null, counts);
+  var canvas = document.getElementById('weekdayChart');
+  var ctx = canvas.getContext('2d');
+  new Chart(canvas, {
+    type: 'bar',
+    data: {
+      labels: labels,
+      datasets: [{
+        data: counts,
+        backgroundColor: function(context) {
+          var chart = context.chart;
+          var area = chart.chartArea;
+          if (!area) return '#ff6b35';
+          var gradient = ctx.createLinearGradient(0, area.bottom, 0, area.top);
+          gradient.addColorStop(0, '#ff6b35');
+          gradient.addColorStop(1, '#f7c948');
+          return gradient;
+        },
+        borderRadius: 8,
+        borderSkipped: false,
+        barPercentage: 0.6
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        y: {
+          beginAtZero: true,
+          grid: { color: 'rgba(255,255,255,0.04)', drawTicks: false },
+          border: { display: false },
+          ticks: { color: '#6b7280', padding: 8, font: { size: 11 } }
+        },
+        x: {
+          grid: { display: false },
+          border: { display: false },
+          ticks: { color: '#9ca3af', font: { size: 12, weight: '500' } }
+        }
+      }
+    }
+  });
+});
+</script>

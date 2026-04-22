@@ -1,0 +1,73 @@
+{{ $ranking := hugo.Data.ranking }}
+{{ $maxDays := (index $ranking 0).unique_days }}
+<div class="ranking-table-wrapper">
+  <table class="ranking-table" id="rankingTable">
+    <thead>
+      <tr>
+        <th data-sort="number">#</th>
+        <th data-sort="string">Nome</th>
+        <th data-sort="number">Dias</th>
+        <th data-sort="number">Check-ins</th>
+        <th data-sort="number">Sequ&ecirc;ncia</th>
+        <th data-sort="number">Horas*</th>
+        <th data-sort="number">Pontos</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $ranking }}
+      {{ $rowClass := "" }}
+      {{ if eq .position 1 }}{{ $rowClass = "top3 gold-row" }}
+      {{ else if eq .position 3 }}{{ $rowClass = "top3 bronze-row" }}
+      {{ else if le .position 3 }}{{ $rowClass = "top3" }}{{ end }}
+      <tr{{ if $rowClass }} class="{{ $rowClass }}"{{ end }}>
+        <td class="position">
+          {{ if eq .position 1 }}🥇{{ else if eq .position 3 }}🥉{{ else if le .position 10 }}{{ .position }}{{ else }}<span class="muted">{{ .position }}</span>{{ end }}
+        </td>
+        <td>{{ .name }}</td>
+        <td>
+          <div class="days-bar">
+            <span>{{ .unique_days }}</span>
+            <div class="bar"><div class="bar-fill" style="width: {{ mul (div (float .unique_days) (float $maxDays)) 100 }}%"></div></div>
+          </div>
+        </td>
+        <td>{{ .checkins }}</td>
+        <td>{{ .streak }}d</td>
+        <td>{{ if gt .total_hours 0.0 }}{{ .total_hours }}h{{ else }}<span class="muted">-</span>{{ end }}</td>
+        <td class="points-cell">{{ .points | lang.FormatNumber 0 }}</td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>
+<p class="footnote">* Check-ins sem dura&ccedil;&atilde;o registrada receberam a m&eacute;dia global (~1h) como estimativa.</p>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var table = document.getElementById('rankingTable');
+  if (!table) return;
+  var headers = table.querySelectorAll('th');
+  headers.forEach(function(th, index) {
+    th.addEventListener('click', function() {
+      var tbody = table.querySelector('tbody');
+      var rows = Array.from(tbody.querySelectorAll('tr'));
+      var sortType = th.dataset.sort;
+      var asc = th.dataset.dir !== 'asc';
+      th.dataset.dir = asc ? 'asc' : 'desc';
+      headers.forEach(function(h) { if (h !== th) delete h.dataset.dir; });
+      rows.sort(function(a, b) {
+        var av = a.cells[index].textContent.trim().replace(/[^\d.,\-]/g, '');
+        var bv = b.cells[index].textContent.trim().replace(/[^\d.,\-]/g, '');
+        if (sortType === 'number') {
+          av = parseFloat(av) || 0;
+          bv = parseFloat(bv) || 0;
+          return asc ? av - bv : bv - av;
+        }
+        av = a.cells[index].textContent.trim();
+        bv = b.cells[index].textContent.trim();
+        return asc ? av.localeCompare(bv, 'pt-BR') : bv.localeCompare(av, 'pt-BR');
+      });
+      rows.forEach(function(row) { tbody.appendChild(row); });
+    });
+  });
+});
+</script>

@@ -1,0 +1,55 @@
+{{ $details := hugo.Data.sport_details }}
+{{ range $idx, $sport := $details }}
+<section class="sport-detail animate-in" id="sport-{{ .key }}">
+  <div class="sport-detail-header">
+    <span class="sport-detail-emoji">{{ .emoji }}</span>
+    <div>
+      <h3 class="sport-detail-title">{{ .name }}</h3>
+      <span class="sport-detail-sub">{{ .total_athletes }} atletas &middot; {{ (index .metrics (sub (len .metrics) 1)).total }} sess&otilde;es</span>
+    </div>
+  </div>
+
+  <div class="sport-detail-metrics">
+    {{ range .metrics }}
+      {{ if ne .key "count" }}
+      <div class="sport-metric-card">
+        <span class="sport-metric-total">{{ .total }}<small>{{ .unit }}</small></span>
+        <span class="sport-metric-label">{{ .label }} total</span>
+        <span class="sport-metric-leader">{{ .leader_name }} &middot; {{ .leader_value }}{{ .unit }}</span>
+      </div>
+      {{ end }}
+    {{ end }}
+  </div>
+
+  <div class="sport-detail-table-wrapper">
+    <table class="sport-detail-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Atleta</th>
+          <th>Sess&otilde;es</th>
+          {{ range .metrics }}
+            {{ if ne .key "count" }}<th>{{ .label }}</th>{{ end }}
+          {{ end }}
+        </tr>
+      </thead>
+      <tbody>
+        {{ $metrics := .metrics }}
+        {{ range $i, $a := .athletes }}
+        <tr{{ if eq $i 0 }} class="sport-leader-row"{{ end }}>
+          <td class="sport-tbl-rank">{{ if eq $i 0 }}🥇{{ else }}{{ add $i 1 }}{{ end }}</td>
+          <td class="sport-tbl-name">{{ .name }}</td>
+          <td>{{ .count }}</td>
+          {{ range $metrics }}
+            {{ if ne .key "count" }}
+              {{ $val := index $a .key }}
+              <td>{{ if gt (float $val) 0.0 }}{{ $val }}{{ .unit }}{{ else }}<span style="opacity:0.3">&ndash;</span>{{ end }}</td>
+            {{ end }}
+          {{ end }}
+        </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+</section>
+{{ end }}

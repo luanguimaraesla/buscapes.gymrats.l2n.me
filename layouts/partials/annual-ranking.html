@@ -1,0 +1,49 @@
+{{ $annual := hugo.Data.annual_ranking }}
+<div class="annual-ranking-wrapper">
+  <table class="annual-ranking" id="annualRanking">
+    <thead>
+      <tr class="annual-ranking-header-group">
+        <th colspan="2"></th>
+        <th colspan="4" class="season-group">Esta&ccedil;&otilde;es</th>
+        <th></th>
+      </tr>
+      <tr>
+        <th class="ar-rank">#</th>
+        <th class="ar-name">Atleta</th>
+        {{ range $annual.seasons }}
+          <th class="ar-season">{{ . }}</th>
+        {{ end }}
+        <th class="ar-total">Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $annual.ranking }}
+      <tr class="{{ if le .position 3 }}ar-top3{{ end }}{{ if eq .position 1 }} ar-leader{{ end }}">
+        <td class="ar-rank">
+          {{ if eq .position 1 }}🥇
+          {{ else if eq .position 2 }}🥈
+          {{ else if eq .position 3 }}🥉
+          {{ else }}{{ .position }}
+          {{ end }}
+        </td>
+        <td class="ar-name">
+          <span class="ar-name-full">{{ .name }}</span>
+          <span class="ar-name-short">{{ .short_name }}</span>
+        </td>
+        {{ $seasons := .seasons }}
+        {{ range $annual.seasons }}
+          {{ $pts := index $seasons . }}
+          <td class="ar-season-pts{{ if not $pts }} ar-pending{{ end }}">
+            {{ if $pts }}
+              {{ $pts | lang.FormatNumber 0 }}
+            {{ else }}
+              <span class="ar-dash">&ndash;</span>
+            {{ end }}
+          </td>
+        {{ end }}
+        <td class="ar-total-pts">{{ .total | lang.FormatNumber 0 }}</td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>

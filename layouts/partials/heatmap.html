@@ -1,0 +1,44 @@
+{{ $heatmap := hugo.Data.heatmap }}
+<div class="heatmap-wrapper">
+  <div class="heatmap-months">
+    <div class="heatmap-weekday-spacer"></div>
+    {{ range $heatmap.weeks }}
+      <div class="heatmap-month-label">{{ .month_label }}</div>
+    {{ end }}
+  </div>
+  <div class="heatmap-grid">
+    <div class="heatmap-weekday-labels">
+      {{ range $i, $day := $heatmap.weekday_labels }}
+        <div class="heatmap-weekday{{ if or (eq $i 1) (eq $i 3) (eq $i 5) }} heatmap-weekday--hidden{{ end }}">{{ $day }}</div>
+      {{ end }}
+    </div>
+    {{ range $heatmap.weeks }}
+      <div class="heatmap-week">
+        {{ range .days }}
+          {{ if .empty }}
+            <div class="heatmap-cell heatmap-cell--empty"></div>
+          {{ else }}
+            {{ $level := 0 }}
+            {{ if gt .count 0 }}
+              {{ if le .count 5 }}{{ $level = 1 }}
+              {{ else if le .count 10 }}{{ $level = 2 }}
+              {{ else if le .count 15 }}{{ $level = 3 }}
+              {{ else }}{{ $level = 4 }}
+              {{ end }}
+            {{ end }}
+            <div class="heatmap-cell" data-level="{{ $level }}" title="{{ .date }}: {{ .count }} check-ins"></div>
+          {{ end }}
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+  <div class="heatmap-legend">
+    <span>Menos</span>
+    <div class="heatmap-cell" data-level="0"></div>
+    <div class="heatmap-cell" data-level="1"></div>
+    <div class="heatmap-cell" data-level="2"></div>
+    <div class="heatmap-cell" data-level="3"></div>
+    <div class="heatmap-cell" data-level="4"></div>
+    <span>Mais</span>
+  </div>
+</div>

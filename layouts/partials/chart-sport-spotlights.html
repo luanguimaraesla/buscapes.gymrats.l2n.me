@@ -1,0 +1,27 @@
+{{ $spotlights := hugo.Data.sport_spotlights }}
+<div class="sport-spotlights">
+  {{ range $idx, $sport := $spotlights }}
+  <div class="sport-card animate-in">
+    <div class="sport-card-header">
+      <span class="sport-emoji">{{ .emoji }}</span>
+      <h3 class="sport-title">{{ .title }}</h3>
+    </div>
+    <div class="sport-bars">
+      {{ $max := 0 }}
+      {{ range .athletes }}
+        {{ if gt .count $max }}{{ $max = .count }}{{ end }}
+      {{ end }}
+      {{ range $i, $a := .athletes }}
+      <div class="sport-bar-row">
+        <span class="sport-bar-rank">{{ add $i 1 }}</span>
+        <span class="sport-bar-name">{{ .name }}</span>
+        <div class="sport-bar-track">
+          <div class="sport-bar-fill sport-bar-fill--{{ $idx }}" style="width: {{ mul (div (float .count) (float $max)) 100 }}%"></div>
+        </div>
+        <span class="sport-bar-count">{{ .count }}</span>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</div>

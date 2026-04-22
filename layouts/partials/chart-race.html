@@ -1,0 +1,74 @@
+{{ $race := hugo.Data.race }}
+<div class="chart-container">
+  <canvas id="raceChart"></canvas>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var data = {{ $race | jsonify | safeJS }};
+  var datasets = data.datasets.map(function(ds) {
+    return {
+      label: ds.label,
+      data: ds.data,
+      borderColor: ds.color,
+      backgroundColor: 'transparent',
+      borderWidth: 2.5,
+      pointRadius: 0,
+      pointHoverRadius: 5,
+      pointBackgroundColor: ds.color,
+      pointBorderColor: '#1a1d2e',
+      pointBorderWidth: 2,
+      tension: 0.35,
+      fill: false
+    };
+  });
+  new Chart(document.getElementById('raceChart'), {
+    type: 'line',
+    data: { labels: data.labels, datasets: datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: {
+            color: '#9ca3af',
+            usePointStyle: true,
+            pointStyleWidth: 10,
+            padding: 20,
+            font: { family: "'Inter', sans-serif", size: 11 }
+          }
+        },
+        tooltip: {
+          backgroundColor: '#1e2235',
+          titleColor: '#f0f0f5',
+          bodyColor: '#9ca3af',
+          borderColor: 'rgba(255,255,255,0.1)',
+          borderWidth: 1,
+          cornerRadius: 8,
+          padding: 12,
+          titleFont: { size: 13, weight: '600' },
+          bodyFont: { size: 12 },
+          mode: 'index',
+          intersect: false,
+          boxPadding: 4
+        }
+      },
+      scales: {
+        y: {
+          title: { display: true, text: 'Dias acumulados', color: '#6b7280', font: { size: 11 } },
+          beginAtZero: true,
+          grid: { color: 'rgba(255,255,255,0.04)', drawTicks: false },
+          border: { display: false },
+          ticks: { color: '#6b7280', padding: 8, font: { size: 11 } }
+        },
+        x: {
+          grid: { display: false },
+          border: { display: false },
+          ticks: { color: '#6b7280', font: { size: 11 } }
+        }
+      },
+      interaction: { mode: 'nearest', axis: 'x', intersect: false }
+    }
+  });
+});
+</script>

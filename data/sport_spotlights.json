@@ -1,0 +1,129 @@
+[
+  {
+    "key": "Corrida",
+    "emoji": "🏃",
+    "title": "Maiores Corredores",
+    "athletes": [
+      {
+        "name": "Nelia",
+        "count": 36
+      },
+      {
+        "name": "Carol",
+        "count": 24
+      },
+      {
+        "name": "Ana B.",
+        "count": 23
+      },
+      {
+        "name": "Beatriz",
+        "count": 21
+      },
+      {
+        "name": "Guilherme",
+        "count": 19
+      }
+    ]
+  },
+  {
+    "key": "Musculação",
+    "emoji": "🏋️",
+    "title": "Maiores Marombas",
+    "athletes": [
+      {
+        "name": "Ana B.",
+        "count": 52
+      },
+      {
+        "name": "Pedro",
+        "count": 51
+      },
+      {
+        "name": "Nelia",
+        "count": 25
+      },
+      {
+        "name": "Aryane",
+        "count": 18
+      },
+      {
+        "name": "Isadora",
+        "count": 17
+      }
+    ]
+  },
+  {
+    "key": "Surfe",
+    "emoji": "🏄",
+    "title": "Maiores Surfistas",
+    "athletes": [
+      {
+        "name": "Luan",
+        "count": 34
+      },
+      {
+        "name": "Guilherme",
+        "count": 34
+      },
+      {
+        "name": "Beatriz",
+        "count": 23
+      }
+    ]
+  },
+  {
+    "key": "Natação",
+    "emoji": "🏊",
+    "title": "Maiores Nadadores",
+    "athletes": [
+      {
+        "name": "Talita",
+        "count": 7
+      },
+      {
+        "name": "Isadora",
+        "count": 3
+      },
+      {
+        "name": "Luan",
+        "count": 2
+      },
+      {
+        "name": "Pedro",
+        "count": 2
+      },
+      {
+        "name": "Ana B.",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "key": "Ciclismo",
+    "emoji": "🚴",
+    "title": "Maiores Ciclistas",
+    "athletes": [
+      {
+        "name": "Nelia",
+        "count": 8
+      },
+      {
+        "name": "Talita",
+        "count": 6
+      },
+      {
+        "name": "Luan",
+        "count": 3
+      },
+      {
+        "name": "Beatriz",
+        "count": 2
+      },
+      {
+        "name": "Aryane",
+        "count": 2
+      }
+    ]
+  }
+]

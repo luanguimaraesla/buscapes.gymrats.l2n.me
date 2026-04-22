@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <section class="hero" style="padding-bottom: 0;">
+    <div class="season-badge">Campeonato {{ .Site.Params.year }}</div>
+    <h1>RANKING ANUAL</h1>
+    <p class="subtitle">Pontua&ccedil;&atilde;o acumulada das esta&ccedil;&otilde;es</p>
+  </section>
+
+  <h2 class="section-title">Classifica&ccedil;&atilde;o Geral</h2>
+  <div class="animate-in">
+    {{ partial "annual-ranking.html" . }}
+  </div>
+{{ end }}

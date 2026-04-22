@@ -1,0 +1,49 @@
+{{ $activities := hugo.Data.activities }}
+<div class="chart-container">
+  <canvas id="activitiesChart"></canvas>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var raw = {{ $activities | jsonify | safeJS }};
+  var top8 = raw.slice(0, 8);
+  var rest = raw.slice(8);
+  var othersCount = rest.reduce(function(s, a) { return s + a.count; }, 0);
+  var labels = top8.map(function(a) { return a.name; });
+  var data = top8.map(function(a) { return a.count; });
+  if (othersCount > 0) { labels.push('Outros'); data.push(othersCount); }
+  var palette = ['#ff6b35','#f7c948','#34d399','#60a5fa','#a78bfa','#f87171','#2dd4bf','#fb923c','#6b7280'];
+  new Chart(document.getElementById('activitiesChart'), {
+    type: 'doughnut',
+    data: {
+      labels: labels,
+      datasets: [{ data: data, backgroundColor: palette, borderWidth: 0, hoverBorderWidth: 2, hoverBorderColor: '#f0f0f5' }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      cutout: '55%',
+      plugins: {
+        legend: {
+          position: window.innerWidth < 768 ? 'bottom' : 'right',
+          labels: {
+            color: '#9ca3af',
+            usePointStyle: true,
+            pointStyleWidth: 10,
+            padding: 12,
+            font: { family: "'Inter', sans-serif", size: 11 }
+          }
+        },
+        tooltip: {
+          backgroundColor: '#1e2235',
+          titleColor: '#f0f0f5',
+          bodyColor: '#9ca3af',
+          borderColor: 'rgba(255,255,255,0.1)',
+          borderWidth: 1,
+          cornerRadius: 8,
+          padding: 12
+        }
+      }
+    }
+  });
+});
+</script>
